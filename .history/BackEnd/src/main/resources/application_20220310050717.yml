@@ -13,8 +13,8 @@ spring:
     url: jdbc:mysql://i6e101.p.ssafy.io:8802/juyuso?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Seoul&zeroDateTimeBehavior=convertToNull&rewriteBatchedStatements=true
     driver-class-name: com.mysql.cj.jdbc.Driver
     hikari:
-      username: #
-      password: #
+      username: ssafy
+      password: ssafy_juyuso!@
   jpa:
     hibernate:
       naming:
@@ -30,13 +30,13 @@ spring:
     livereload:
       enabled: true
 jwt:
-  secret:
+  secret: dyAeHubOOc8KaOfYB6XEQoEj1QzRlVgtjNL8PYs1A1tymZvvqkcEU7L1imkKHeDa
   expiration: 1296000000 # unit is ms. 15 * 24 * 60 * 60 * 1000 = 15days
 
 social:
   kakao:
-    client-id: 
-    redirect: 
+    client-id: 54ef6bedc90c5d1d07c7813bdd123278
+    redirect: https://i6e101.p.ssafy.io/login
     url:
       login: https://kauth.kakao.com/oauth/authorize
       token: https://kauth.kakao.com/oauth/token
@@ -66,5 +66,5 @@ app:
     path: /upload
 
 openvidu:
-  url: 
-  secret: 
+  url: https://i6e101.p.ssafy.io:4443/
+  secret: SSAFY
